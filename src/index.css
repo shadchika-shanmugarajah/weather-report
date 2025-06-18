@@ -48,9 +48,6 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
   body {
     @apply bg-gradient-to-br from-sky-50 via-blue-50 to-indigo-100 font-sans antialiased text-slate-800 min-h-screen;
   }

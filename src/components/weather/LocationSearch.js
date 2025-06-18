@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Search, MapPin, Loader2 } from 'lucide-react';
-import Button from '../ui/Button';
-import Input from '../ui/Input';
-import Card, { CardContent } from '../ui/Card';
+import Button from '../ui/Button.js';
+import Input from '../ui/Input.js';
+import Card, { CardContent } from '../ui/Card.js';
 
 const LocationSearch = ({ onLocationSelect, isLoading }) => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -26,7 +26,8 @@ const LocationSearch = ({ onLocationSelect, isLoading }) => {
     'Tokyo, Japan',
     'Paris, France',
     'Sydney, Australia',
-    'Mumbai, India'
+    'Mumbai, India',
+    'Colombo, Sri Lanka',
   ];
 
   return (
@@ -55,7 +56,7 @@ const LocationSearch = ({ onLocationSelect, isLoading }) => {
             <Button
               type="submit"
               disabled={!searchQuery.trim() || isLoading}
-              className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200"
+              className="bg-gradient-to-r from-blue-700 to-purple-700 hover:from-blue-800 hover:to-purple-800 text-white px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200"
             >
               {isLoading ? (
                 <Loader2 className="h-4 w-4 animate-spin" />
@@ -86,4 +87,4 @@ const LocationSearch = ({ onLocationSelect, isLoading }) => {
   );
 };
 
-export default LocationSearch;
+export default  LocationSearch;

@@ -1,7 +1,7 @@
 import { Link } from 'wouter';
 import { Cloud, ArrowLeft } from 'lucide-react';
-import Button from '../components/ui/Button';
-import Card from '../components/ui/Card';
+import Button from '../components/ui/Button.js';
+import Card from '../components/ui/Card.js';
 
 export default function NotFound() {
   return (

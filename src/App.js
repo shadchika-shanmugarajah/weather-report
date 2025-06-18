@@ -1,14 +1,13 @@
-import { Router, Route, Switch } from 'wouter';
-import Weather from './pages/Weather';
-import NotFound from './pages/NotFound';
+import { Router, Route } from 'wouter';
+import './index.css';
+import Weather from './pages/Weather.js';
+import NotFound from './pages/NotFound.js';
 
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route path="/" component={Weather} />
-        <Route component={NotFound} />
-      </Switch>
+      <Route path="/" component={Weather} />
+      <Route path="/404" component={NotFound} />
     </Router>
   );
 }
